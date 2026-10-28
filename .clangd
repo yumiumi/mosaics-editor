@@ -1,0 +1,13 @@
+CompileFlags:
+  Add:
+    - -xc++
+    - -std=c++17
+    - -Wall
+    - -Wextra
+    - -Wno-unused-variable
+    - -Wno-missing-field-initializers
+    - -Wno-sign-compare
+    - -isystemthird_party/raylib/include
+    - -isystemthird_party/imgui
+    - -isystemthird_party/rlImGui
+    - -Ithird_party/
