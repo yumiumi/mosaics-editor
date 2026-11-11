@@ -1,0 +1,3 @@
+# id tileset_name.png tile_width tile_height margin spacing
+0 "terrain.png" 32 32 0 0
+1 "wall_thin.png" 32 58 0 0
