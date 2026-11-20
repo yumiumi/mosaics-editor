@@ -11,7 +11,7 @@ struct Tile {
 
 struct Tileset {
     int id;
-    std::string image_path;
+    char file_name[256];
     Texture2D texture;
     int tile_w, tile_h;
     int margin = 0, spacing = 0;

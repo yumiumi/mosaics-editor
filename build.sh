@@ -19,8 +19,14 @@ g++ -std=c++17 -Wall -Wextra -Wno-unused-variable -Wno-missing-field-initializer
     -c main.cpp \
     -o build/main.o
 
+g++ -std=c++17 -Wall -Wextra -g -O0 \
+    -isystem third_party/raylib/include \
+    -I. \
+    -c parser.cpp \
+    -o build/parser.o
+
 # Link
-g++ build/main.o build/deps.o \
+g++ build/main.o build/parser.o build/deps.o \
     -o build/mosaics-editor \
     third_party/raylib/lib/libraylib.a \
     -lm -lpthread -ldl -lrt -l:libX11.so.6
