@@ -56,6 +56,7 @@ int main() {
                     const bool is_selected = (selected_ts == i);
                     if (ImGui::Selectable(tilesets[i].file_name, is_selected)) {
                         selected_ts = i;
+                        selected_t = 0; // no tile selected
                     }
                     if (is_selected) {
                         ImGui::SetItemDefaultFocus();
